@@ -1,0 +1,18 @@
+.body{
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+    font-family: caviar;
+    width:99vw;
+    overflow-x:hidden;
+}
+
+#heading{
+    border: 1px solid red;
+}
+
+
+
+
+@font-face {
+    font-family: caviar;
+    src:url("../Fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf") ;

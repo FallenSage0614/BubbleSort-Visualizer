@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>Visualize Coding</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/insertionSort.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/InsertionSort.js"></script>
+</head>
+
+<body class="body">
+    <div class="row" id="heading">
+        <h1> Demonstrating Insertion Sort</h1>
+    </div>
+    <div class="row" id="input">
+        <input type="text" id="numberString">
+        <input type="button" onclick="startSorting(document.getElementById('numberString').value);"
+            class="btn btn-primary btn-sm" id="submit" value="Sort">
+        <input type="button" onclick="showExample()" class="btn btn-secondary btn-sm" id="example" value="Show Example">
+    </div>
+    <div class="row" id="error">
+        <p id="errorMsg"></p>
+        <!--<input type="button" onclick="increaseSpeed()" class="btn btn-secondary btn-sm" id="speed" value="Change Speed">  -->
+    </div>
+
+
+
+
+
+
+    <div id="workspace">
+        <div class="bar" id="bar1" style="height:2%;left:0.1%;"></div>
+        <div class="bar" id="bar2" style="height:2%;left:1.1%;"></div>
+        <div class="bar" id="bar3" style="height:2%;left:2.1%;"></div>
+        <div class="bar" id="bar4" style="height:2%;left:3.1%;"></div>
+        <div class="bar" id="bar5" style="height:2%;left:4.1%;"></div>
+        <div class="bar" id="bar6" style="height:2%;left:5.1%;"></div>
+        <div class="bar" id="bar7" style="height:2%;left:6.1%;"></div>
+        <div class="bar" id="bar8" style="height:2%;left:7.1%;"></div>
+        <div class="bar" id="bar9" style="height:2%;left:8.1%;"></div>
+        <div class="bar" id="bar10" style="height:2%;left:9.1%;"></div>
+        <div class="bar" id="bar11" style="height:2%;left:10.1%;"></div>
+        <div class="bar" id="bar12" style="height:2%;left:11.1%;"></div>
+        <div class="bar" id="bar13" style="height:2%;left:12.1%;"></div>
+        <div class="bar" id="bar14" style="height:2%;left:13.1%;"></div>
+        <div class="bar" id="bar15" style="height:2%;left:14.1%;"></div>
+        <div class="bar" id="bar16" style="height:2%;left:15.1%;"></div>
+        <div class="bar" id="bar17" style="height:2%;left:16.1%;"></div>
+        <div class="bar" id="bar18" style="height:2%;left:17.1%;"></div>
+        <div class="bar" id="bar19" style="height:2%;left:18.1%;"></div>
+        <div class="bar" id="bar20" style="height:2%;left:19.1%;"></div>
+        <div class="bar" id="bar21" style="height:2%;left:20.1%;"></div>
+        <div class="bar" id="bar22" style="height:2%;left:21.1%;"></div>
+        <div class="bar" id="bar23" style="height:2%;left:22.1%;"></div>
+        <div class="bar" id="bar24" style="height:2%;left:23.1%;"></div>
+        <div class="bar" id="bar25" style="height:2%;left:24.1%;"></div>
+        <div class="bar" id="bar26" style="height:2%;left:25.1%;"></div>
+        <div class="bar" id="bar27" style="height:2%;left:26.1%;"></div>
+        <div class="bar" id="bar28" style="height:2%;left:27.1%;"></div>
+        <div class="bar" id="bar29" style="height:2%;left:28.1%;"></div>
+        <div class="bar" id="bar30" style="height:2%;left:29.1%;"></div>
+        <div class="bar" id="bar31" style="height:2%;left:30.1%;"></div>
+        <div class="bar" id="bar32" style="height:2%;left:31.1%;"></div>
+        <div class="bar" id="bar33" style="height:2%;left:32.1%;"></div>
+        <div class="bar" id="bar34" style="height:2%;left:33.1%;"></div>
+        <div class="bar" id="bar35" style="height:2%;left:34.1%;"></div>
+        <div class="bar" id="bar36" style="height:2%;left:35.1%;"></div>
+        <div class="bar" id="bar37" style="height:2%;left:36.1%;"></div>
+        <div class="bar" id="bar38" style="height:2%;left:37.1%;"></div>
+        <div class="bar" id="bar39" style="height:2%;left:38.1%;"></div>
+        <div class="bar" id="bar40" style="height:2%;left:39.1%;"></div>
+        <div class="bar" id="bar41" style="height:2%;left:40.1%;"></div>
+        <div class="bar" id="bar42" style="height:2%;left:41.1%;"></div>
+        <div class="bar" id="bar43" style="height:2%;left:42.1%;"></div>
+        <div class="bar" id="bar44" style="height:2%;left:43.1%;"></div>
+        <div class="bar" id="bar45" style="height:2%;left:44.1%;"></div>
+        <div class="bar" id="bar46" style="height:2%;left:45.1%;"></div>
+        <div class="bar" id="bar47" style="height:2%;left:46.1%;"></div>
+        <div class="bar" id="bar48" style="height:2%;left:47.1%;"></div>
+        <div class="bar" id="bar49" style="height:2%;left:48.1%;"></div>
+        <div class="bar" id="bar50" style="height:2%;left:49.1%;"></div>
+        <div class="bar" id="bar51" style="height:2%;left:50.1%;"></div>
+        <div class="bar" id="bar52" style="height:2%;left:51.1%;"></div>
+        <div class="bar" id="bar53" style="height:2%;left:52.1%;"></div>
+        <div class="bar" id="bar54" style="height:2%;left:53.1%;"></div>
+        <div class="bar" id="bar55" style="height:2%;left:54.1%;"></div>
+        <div class="bar" id="bar56" style="height:2%;left:55.1%;"></div>
+        <div class="bar" id="bar57" style="height:2%;left:56.1%;"></div>
+        <div class="bar" id="bar58" style="height:2%;left:57.1%;"></div>
+        <div class="bar" id="bar59" style="height:2%;left:58.1%;"></div>
+        <div class="bar" id="bar60" style="height:2%;left:59.1%;"></div>
+        <div class="bar" id="bar61" style="height:2%;left:60.1%;"></div>
+        <div class="bar" id="bar62" style="height:2%;left:61.1%;"></div>
+        <div class="bar" id="bar63" style="height:2%;left:62.1%;"></div>
+        <div class="bar" id="bar64" style="height:2%;left:63.1%;"></div>
+        <div class="bar" id="bar65" style="height:2%;left:64.1%;"></div>
+        <div class="bar" id="bar66" style="height:2%;left:65.1%;"></div>
+        <div class="bar" id="bar67" style="height:2%;left:66.1%;"></div>
+        <div class="bar" id="bar68" style="height:2%;left:67.1%;"></div>
+        <div class="bar" id="bar69" style="height:2%;left:68.1%;"></div>
+        <div class="bar" id="bar70" style="height:2%;left:69.1%;"></div>
+        <div class="bar" id="bar71" style="height:2%;left:70.1%;"></div>
+        <div class="bar" id="bar72" style="height:2%;left:71.1%;"></div>
+        <div class="bar" id="bar73" style="height:2%;left:72.1%;"></div>
+        <div class="bar" id="bar74" style="height:2%;left:73.1%;"></div>
+        <div class="bar" id="bar75" style="height:2%;left:74.1%;"></div>
+        <div class="bar" id="bar76" style="height:2%;left:75.1%;"></div>
+        <div class="bar" id="bar77" style="height:2%;left:76.1%;"></div>
+        <div class="bar" id="bar78" style="height:2%;left:77.1%;"></div>
+        <div class="bar" id="bar79" style="height:2%;left:78.1%;"></div>
+        <div class="bar" id="bar80" style="height:2%;left:79.1%;"></div>
+        <div class="bar" id="bar81" style="height:2%;left:80.1%;"></div>
+        <div class="bar" id="bar82" style="height:2%;left:81.1%;"></div>
+        <div class="bar" id="bar83" style="height:2%;left:82.1%;"></div>
+        <div class="bar" id="bar84" style="height:2%;left:83.1%;"></div>
+        <div class="bar" id="bar85" style="height:2%;left:84.1%;"></div>
+        <div class="bar" id="bar86" style="height:2%;left:85.1%;"></div>
+        <div class="bar" id="bar87" style="height:2%;left:86.1%;"></div>
+        <div class="bar" id="bar88" style="height:2%;left:87.1%;"></div>
+        <div class="bar" id="bar89" style="height:2%;left:88.1%;"></div>
+        <div class="bar" id="bar90" style="height:2%;left:89.1%;"></div>
+        <div class="bar" id="bar91" style="height:2%;left:90.1%;"></div>
+        <div class="bar" id="bar92" style="height:2%;left:91.1%;"></div>
+        <div class="bar" id="bar93" style="height:2%;left:92.1%;"></div>
+        <div class="bar" id="bar94" style="height:2%;left:93.1%;"></div>
+        <div class="bar" id="bar95" style="height:2%;left:94.1%;"></div>
+        <div class="bar" id="bar96" style="height:2%;left:95.1%;"></div>
+        <div class="bar" id="bar97" style="height:2%;left:96.1%;"></div>
+        <div class="bar" id="bar98" style="height:2%;left:97.1%;"></div>
+        <div class="bar" id="bar99" style="height:2%;left:98.1%;"></div>
+        <div class="bar" id="bar100" style="height:2%;left:99.1%;"></div>
+
+
+
+    </div>
+</body>
+
+</html>

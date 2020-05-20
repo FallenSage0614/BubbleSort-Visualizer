@@ -1,0 +1,59 @@
+.body{
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+    font-family: caviar;
+    width:99vw;
+    overflow-x:hidden;
+}
+
+
+.bar{
+    background-color: aquamarine;
+    width:0.8%;
+    bottom:0;
+    position: absolute;
+    color:blueviolet;
+    text-align: center;
+    font-size: 200%;
+}
+
+#error{
+    margin-left:5%;
+    display:hidden;
+}
+
+#example{
+    margin-left:1%;
+}
+
+#input{
+    margin-left:3%;
+    margin-top:0%;   
+}
+
+#submit{
+    position: relative;
+    width:150px;
+}
+
+#heading{
+    margin-left:3%;
+    margin-top:2%; 
+}
+
+#numberString{
+    width:75vw;
+}
+
+#workspace{
+    width:100vw;
+    height:80%;
+    position:absolute;
+    word-wrap: wrap;
+    margin-top:0%;
+    
+}
+
+@font-face {
+    font-family: caviar;
+    src:url("../Fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf") ;
